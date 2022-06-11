@@ -1,0 +1,75 @@
+.footer {
+  max-width: 1200px;
+  padding: 80px 20px 0px 20px;
+  margin: 0 auto;
+  background: #fcda68;
+  border-radius: 4px;
+}
+
+.footer-contato {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 200px;
+  align-items: center;
+  padding: 50px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+
+.footer-contatos li {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.contato-numero::before {
+  content: "";
+  background: url("../img/wpp.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -30px;
+  top: 2px;
+}
+
+.contato-email::before {
+  content: "";
+  background: url("../img/email.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -30px;
+  top: 5px;
+}
+
+.footer-copy {
+  margin-top: 80px;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #838383;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer-texto,
+  .footer-contatos li {
+    font-size: 1.25rem;
+  }
+}
